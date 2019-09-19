@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  rent: 1
+  year_built: MyString
+  last_year_appreciation: 9.99
+  next_year_appreciation: 9.99
+  lease_length: 1
+  beds_baths_sqft: MyString
+  description: MyString
+  type: 
+
+two:
+  price: 1
+  rent: 1
+  year_built: MyString
+  last_year_appreciation: 9.99
+  next_year_appreciation: 9.99
+  lease_length: 1
+  beds_baths_sqft: MyString
+  description: MyString
+  type: 
