@@ -1,12 +1,10 @@
 class Api::V1::HoldingsController < ApplicationController
+    skip_before_action :authorized, only: [:index]
+
     def index 
         holdings = Holding.all
         render json: HoldingSerializer.new(holdings).to_serialized_json
     end
-
-    # def show
-    #     property = Property.find(property_params[id])
-    # end
 
     def create
         holding = Holding.new(holding_params)
