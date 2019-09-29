@@ -1,5 +1,5 @@
 class Api::V1::InvestorsController < ApplicationController
-    # skip_before_action :authorized, only: [:create]
+    skip_before_action :authorized, only: [:create]
 
     def profile
         render json: { investor: InvestorSerializer.new(current_investor) }, status: :accepted

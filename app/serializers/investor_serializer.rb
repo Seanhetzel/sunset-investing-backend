@@ -1,3 +1,3 @@
 class InvestorSerializer < ActiveModel::Serializer
-  attributes :id, :name,
+  attributes :id, :name, :password
 end
